@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub 介绍</title>
+</head>
+<body>
+<!--GitHub是一个面向开源及私有软件项目的托管平台,因为只支持git作为唯一的版本库格式进行托管,故名GitHub
+
+    1.将本地代码推送到 github 的远程仓库中：
+      命令: git push 远程仓库地址 分支名称
+      eg:   git push https://github.com/whongjiang/html.git master
+      作用: 将本地仓库中的master分支推送到远程仓库中.
+
+      注意: (1)push 代码的时候，必须要跟分支，这个分支就是本地存在的一个分支
+           (2)可以通过 master:dev 这种形式,将本地的 master 分支中的内容, 推送到远程服务器中,
+              服务器会自动帮我们创建 dev 分支!
+
+    2. 从远程仓库拉取代码到本地仓库
+      命令: git pull 仓库地址 分支名称
+
+      注意: (1)如果本地没有仓库, 那么是无法通过 pull 来拉取远程仓库中某个分支的代码!!!
+            (2)一般情况下, 第一次获取仓库中的内容需要通过:git clone 仓库地址 [文件夹名称]
+               以后每次只需要: git pull 仓库地址 分支名称
+
+    3.简化操作:(push 和 pull 都可以使用这个简化操作!!!)
+      git remote add 变量名 远程仓库地址 分支名称
+      eg: remote add abc https://github.com/whongjiang/html.git master
+      第一次推送代码到远程仓库可以写成这样式,以后就可以通过abc来表示这个远程仓库的地址了.
+      通过remote推送:remote push abc master
+
+      对于从远程仓库拉取代码到本地仓库中亦可如此简化操作.
+
+      多次推送代码或者拉取代码的操作中master亦频繁使用,对于分支master也可以简化操作,如下:
+      第一次可写成这样: git push -u abc master
+      以后便可简写成:   git push abc     这时,abc相当于仓库名+分支名
+
+
+
+-->
+</body>
+</html>
